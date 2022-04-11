@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  }
+  header h1 {
+    margin-bottom: 70px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    
+  }
+  .card1, .card2, .card3 {
+    
+    background-color: grey;
+    border: 1px solid black;
+    margin:1.2em;
+    position: relative;
+    
+    float: left;
+    
+  }
+
+  .card-title1, .card-title2, .card-title3{
+    font-weight: 800;
+    font-size: 130%;
+    padding: 0.2em 1.5em;
+    border: 1px solid black;
+    width:fit-content;
+    position: absolute;
+    right: 0;
+  }
+  
+  .card-title1{
+    background-color: aquamarine; 
+  }
+  .card-title2{
+    background-color:burlywood;
+  }
+  .card-title3{
+    background-color:red;
+  }
+  p {
+    letter-spacing: 1px;
+    margin-top: 2.5em;
+    padding-left:1.2em ;
+    padding-right:1.2em ;
+    font-family: Helvetica;  
+  }
+  
+  /********** Large devices only **********/
+  @media (min-width: 992px) {
+    .card1, .card2, .card3{
+      
+      width:calc(88%/3);
+    }
+    
+  }
+  /********** Mid devices only **********/
+  @media (min-width: 768px) and (max-width:991px) {
+    .card1, .card2{
+      
+      width:calc(90%/2);
+    }
+    .card3{
+      width: 94.8%;
+    }
+  }
+ 
+   
+ 
+
+  
+
+  
